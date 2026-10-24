@@ -1,8 +1,8 @@
 export const CONFIG = {
   // International format, digits only (no "+", spaces or leading zeros), e.g. 9715XXXXXXXX.
-  whatsappNumber: '971500000000',
-  phoneDisplay: '984 953',
-  phoneTel: '984953',
+  whatsappNumber: '971586012288',
+  phoneDisplay: '+971 58 601 2288',
+  phoneTel: '+971586012288',
   website: 'towman.ae',
 } as const;
 
