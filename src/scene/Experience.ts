@@ -306,11 +306,15 @@ export class Experience {
     );
     const pos = this.tmpA.set(c.x + follow, c.y, c.z);
 
-    // Portrait screens pull the camera back and tilt down so the vehicles sit above the copy.
+    // Portrait: pull back; caption copy docks under the HUD on narrow screens, action stays below.
     const aspect = this.camera.aspect;
     const k = aspect >= 1.2 ? 1 : 1 + (1.2 - aspect) * 1.6;
     pos.sub(this.target).multiplyScalar(k).add(this.target);
-    if (aspect < 1) this.target.y -= (1 - aspect) * 5.5;
+    if (aspect < 1) {
+      const narrow = 1 - aspect;
+      this.target.y += narrow * 2.8;
+      pos.y -= narrow * 0.6;
+    }
 
     this.pointerSmooth.lerp(this.pointer, 0.04);
     pos.x += this.pointerSmooth.x * 0.6;
