@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Towman — Strong hands for your toughest miles</title>
+    <meta name="description" content="Towman is your roadside hero, always on call. 24/7 flatbed towing and roadside recovery — message us on WhatsApp and we're on the way." />
+    <meta name="theme-color" content="#00159B" />
+    <meta property="og:title" content="Towman — Your Roadside Hero, Always on Call" />
+    <meta property="og:description" content="Strong hands for your toughest miles. 24/7 towing and roadside recovery." />
+    <meta property="og:image" content="/img/og-image.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Zalando+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contact">Skip to contact</a>
+
+    <div class="preloader" data-preloader aria-hidden="true">
+      <div class="preloader__mark" data-logo="mark-draw"></div>
+      <div class="preloader__bar"><span data-preloader-bar></span></div>
+      <p class="preloader__label">Dispatching<span data-preloader-pct>0</span>%</p>
+    </div>
+
+    <canvas class="webgl" data-webgl aria-hidden="true"></canvas>
+    <div class="scene-vignette" aria-hidden="true"></div>
+    <div class="scene-grain" aria-hidden="true"></div>
+
+    <header class="nav" data-nav>
+      <a class="nav__logo" href="#top" aria-label="Towman home" data-logo="lockup"></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#story">Story</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why Towman</a>
+        <a href="#process">How it works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn--wa btn--sm" data-wa data-wa-msg="Hi Towman, I need roadside assistance." target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-wa" /></svg><span>WhatsApp</span>
+      </a>
+    </header>
+
+    <aside class="hud" data-hud aria-hidden="true">
+      <div class="hud__rail"><span data-hud-progress></span></div>
+      <ol class="hud__dots">
+        <li data-hud-dot></li><li data-hud-dot></li><li data-hud-dot></li><li data-hud-dot></li><li data-hud-dot></li><li data-hud-dot></li><li data-hud-dot></li>
+      </ol>
+      <div class="hud__readout">
+        <span class="hud__label">Mission</span>
+        <span class="hud__status" data-hud-status>SOS received</span>
+        <span class="hud__pct"><span data-hud-percent>000</span>%</span>
+      </div>
+    </aside>
+
+    <main id="top">
+      <section class="story" id="story" data-story>
+        <div class="story__stage">
+          <div class="hero">
+            <p class="eyebrow"><span class="pulse-dot"></span>24/7 Roadside Recovery</p>
+            <h1 class="hero__title" data-split>Your Roadside Hero, <em>Always on Call.</em></h1>
+            <p class="hero__lead">When the road gives you trouble, Towman's already on the way. Fast, careful towing by people who know what being stuck feels like.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--wa" data-wa data-wa-msg="Hi Towman, I need a tow. My location is: " target="_blank" rel="noopener">
+                <svg class="icon" aria-hidden="true"><use href="#i-wa" /></svg><span>Get help on WhatsApp</span>
+              </a>
+              <a class="btn btn--ghost" data-tel><svg class="icon" aria-hidden="true"><use href="#i-phone" /></svg><span>Call <span data-phone></span></span></a>
+            </div>
+            <div class="scroll-cue"><span></span>Scroll to see the rescue</div>
+          </div>
+
+          <article class="caption caption--left">
+            <span class="caption__index">01 / Stranded</span>
+            <h2>When the road lets you down&hellip;</h2>
+            <p>A dark highway, hazards blinking, smoke from the bonnet. Nobody plans for this moment.</p>
+          </article>
+          <article class="caption caption--right">
+            <span class="caption__index">02 / Dispatch</span>
+            <h2>Towman's already on the way.</h2>
+            <p>One message and the nearest truck rolls out. Beacons on, help inbound.</p>
+          </article>
+          <article class="caption caption--left">
+            <span class="caption__index">03 / Deploy</span>
+            <h2>Precision rollback recovery.</h2>
+            <p>The hydraulic bed slides back and tilts to meet the road. No dragging, no damage.</p>
+          </article>
+          <article class="caption caption--right">
+            <span class="caption__index">04 / Secure</span>
+            <h2>Strong hands. Gentle care.</h2>
+            <p>Hooked, winched and strapped down. Your car is treated like it's our own.</p>
+          </article>
+          <article class="caption caption--left">
+            <span class="caption__index">05 / Ready</span>
+            <h2>Every breakdown is a comeback.</h2>
+            <p>Bed locked, beacons on, and the road ahead is open again.</p>
+          </article>
+          <article class="caption caption--center caption--finale">
+            <span class="caption__index">06 / Back on the road</span>
+            <h2>Strong hands for your <em>toughest miles.</em></h2>
+            <a class="btn btn--wa" data-wa data-wa-msg="Hi Towman, I'd like to book a tow." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-wa" /></svg><span>Connect on WhatsApp</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <div class="content">
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track" data-marquee>
+            <span>Strong hands for your toughest miles</span><i></i>
+            <span>Your roadside hero, always on call</span><i></i>
+            <span>Driven by care. Powered by reliability</span><i></i>
+            <span>Every journey deserves a helping hand</span><i></i>
+          </div>
+        </div>
+
+        <section class="section" id="services">
+          <header class="section__head">
+            <p class="eyebrow">What we do</p>
+            <h2 class="section__title" data-split>Help that feels like <em>a friend.</em></h2>
+            <p class="section__lead">Flat tyre? Don't worry, we've all been there. Whatever stopped you, Towman's got you covered, day or night, rain or shine.</p>
+          </header>
+          <div class="cards" data-stagger>
+            <article class="card" data-tilt>
+              <svg class="card__icon" aria-hidden="true"><use href="#i-truck" /></svg>
+              <h3>Flatbed Towing</h3>
+              <p>Damage-free rollback recovery for sedans, SUVs and luxury cars, from the roadside to wherever you need.</p>
+            </article>
+            <article class="card" data-tilt>
+              <svg class="card__icon" aria-hidden="true"><use href="#i-shield" /></svg>
+              <h3>Accident Recovery</h3>
+              <p>Calm, careful extraction and transport after a collision, so you can focus on what matters.</p>
+            </article>
+            <article class="card" data-tilt>
+              <svg class="card__icon" aria-hidden="true"><use href="#i-bolt" /></svg>
+              <h3>Battery Jump-Start</h3>
+              <p>Dead battery in the car park? We'll have you running again in minutes.</p>
+            </article>
+            <article class="card" data-tilt>
+              <svg class="card__icon" aria-hidden="true"><use href="#i-tyre" /></svg>
+              <h3>Flat Tyre Change</h3>
+              <p>Your spare fitted safely on the spot, so the journey keeps going.</p>
+            </article>
+            <article class="card" data-tilt>
+              <svg class="card__icon" aria-hidden="true"><use href="#i-fuel" /></svg>
+              <h3>Fuel Delivery</h3>
+              <p>Ran dry? We bring enough to get you to the next station.</p>
+            </article>
+            <article class="card" data-tilt>
+              <svg class="card__icon" aria-hidden="true"><use href="#i-key" /></svg>
+              <h3>Vehicle Lockout</h3>
+              <p>Keys locked inside? Safe, scratch-free entry without the panic.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--values" id="why">
+          <header class="section__head">
+            <p class="eyebrow">Why Towman</p>
+            <h2 class="section__title" data-split>The friend who shows up <em>when the road doesn't.</em></h2>
+          </header>
+          <div class="values" data-stagger>
+            <article class="value">
+              <span class="value__num">01</span>
+              <h3>Courage</h3>
+              <p class="value__tag">Reliably heroic</p>
+              <p>We step up when it matters most. That's the quiet heroism of drivers who keep others safe and moving.</p>
+            </article>
+            <article class="value">
+              <span class="value__num">02</span>
+              <h3>Reliability &amp; Compassion</h3>
+              <p class="value__tag">Warmly human</p>
+              <p>We show up every time, everywhere, and we help with heart. You're a person in need, not a ticket number.</p>
+            </article>
+            <article class="value">
+              <span class="value__num">03</span>
+              <h3>Positivity &amp; Integrity</h3>
+              <p class="value__tag">Adventurously spirited</p>
+              <p>Honest pricing, fair treatment, consistent quality. Every setback is a story waiting to turn around.</p>
+            </article>
+          </div>
+          <dl class="stats" data-stagger>
+            <div class="stat"><dt>Always on call</dt><dd><span data-count="24">0</span>/7</dd></div>
+            <div class="stat"><dt>Days a year</dt><dd><span data-count="365">0</span></dd></div>
+            <div class="stat"><dt>To reach us</dt><dd><span data-count="1">0</span> tap</dd></div>
+            <div class="stat"><dt>Hidden fees</dt><dd><span data-count="0">0</span></dd></div>
+          </dl>
+        </section>
+
+        <section class="section section--process" id="process">
+          <header class="section__head">
+            <p class="eyebrow">How it works</p>
+            <h2 class="section__title" data-split>From stranded to sorted <em>in three steps.</em></h2>
+          </header>
+          <ol class="steps" data-steps>
+            <li class="step">
+              <span class="step__num">01</span>
+              <h3>Message us on WhatsApp</h3>
+              <p>Tap the button and tell us what happened. A real person replies, day or night.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">02</span>
+              <h3>Share your location</h3>
+              <p>Drop a live pin so the nearest Towman truck can head straight to you.</p>
+            </li>
+            <li class="step">
+              <span class="step__num">03</span>
+              <h3>We get you moving</h3>
+              <p>Fixed on the spot or towed safely to your garage, home or dealer.</p>
+            </li>
+            <span class="steps__line" aria-hidden="true"><span data-steps-line></span></span>
+          </ol>
+        </section>
+
+        <section class="section section--fleet" id="fleet">
+          <div class="fleet">
+            <div class="fleet__copy">
+              <p class="eyebrow">The fleet</p>
+              <h2 class="section__title" data-split>Built for the <em>heavy lifting.</em></h2>
+              <p class="section__lead">Every Towman truck carries the colours of a promise: show up fast, handle with care, leave nobody stranded.</p>
+              <ul class="chips">
+                <li>Hydraulic tilt &amp; slide bed</li>
+                <li>Recovery winch</li>
+                <li>LED safety beacons</li>
+                <li>Soft-strap tie-downs</li>
+              </ul>
+            </div>
+            <figure class="fleet__visual" data-parallax>
+              <div class="fleet__glow" aria-hidden="true"></div>
+              <img src="/img/towman-truck.webp" alt="Towman rollback tow truck in blue and orange livery" width="1600" height="720" loading="lazy" decoding="async" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="section section--contact" id="contact">
+          <div class="contact">
+            <div class="contact__intro">
+              <p class="eyebrow"><span class="pulse-dot"></span>Live dispatch</p>
+              <h2 class="section__title" data-split>Stuck right now? <em>Let's get you moving.</em></h2>
+              <p class="section__lead">Fill in the details and we'll open WhatsApp with your request ready to send. Prefer to talk? Call us any time.</p>
+              <div class="contact__direct">
+                <a class="direct" data-wa data-wa-msg="Hi Towman, I need roadside assistance." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-wa" /></svg>
+                  <span><small>WhatsApp</small>Chat with dispatch</span>
+                </a>
+                <a class="direct" data-tel>
+                  <svg class="icon" aria-hidden="true"><use href="#i-phone" /></svg>
+                  <span><small>Hotline</small><span data-phone></span></span>
+                </a>
+                <a class="direct" data-web target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-globe" /></svg>
+                  <span><small>Website</small><span data-website></span></span>
+                </a>
+              </div>
+            </div>
+
+            <form class="form" data-contact-form novalidate>
+              <div class="form__row">
+                <label class="field">
+                  <span>Your name</span>
+                  <input name="name" autocomplete="name" required placeholder="e.g. Sara" />
+                </label>
+                <label class="field">
+                  <span>Phone</span>
+                  <input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+971 ..." />
+                </label>
+              </div>
+              <label class="field">
+                <span>What do you need?</span>
+                <select name="service" required>
+                  <option value="Flatbed towing">Flatbed towing</option>
+                  <option value="Accident recovery">Accident recovery</option>
+                  <option value="Battery jump-start">Battery jump-start</option>
+                  <option value="Flat tyre change">Flat tyre change</option>
+                  <option value="Fuel delivery">Fuel delivery</option>
+                  <option value="Vehicle lockout">Vehicle lockout</option>
+                  <option value="Something else">Something else</option>
+                </select>
+              </label>
+              <label class="field">
+                <span>Vehicle</span>
+                <input name="vehicle" placeholder="Make, model, colour, plate" />
+              </label>
+              <div class="field">
+                <span>Where are you?</span>
+                <div class="field__inline">
+                  <input name="location" required placeholder="Area, road or landmark" aria-label="Location" />
+                  <button class="btn btn--ghost btn--sm" type="button" data-locate>
+                    <svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg><span>Use my location</span>
+                  </button>
+                </div>
+              </div>
+              <label class="field">
+                <span>Anything else?</span>
+                <textarea name="notes" rows="3" placeholder="Drop-off point, number of passengers, etc."></textarea>
+              </label>
+              <button class="btn btn--wa btn--block" type="submit">
+                <svg class="icon" aria-hidden="true"><use href="#i-wa" /></svg><span>Send via WhatsApp</span>
+              </button>
+              <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer__brand">
+            <span class="footer__logo" data-logo="lockup"></span>
+            <p>Strong hands for your toughest miles.</p>
+          </div>
+          <nav class="footer__links" aria-label="Footer">
+            <a href="#services">Services</a>
+            <a href="#why">Why Towman</a>
+            <a href="#process">How it works</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <p class="footer__legal">&copy; <span data-year></span> Towman Recovery Service. All rights reserved.</p>
+        </footer>
+      </div>
+    </main>
+
+    <a class="wa-fab" data-wa data-wa-msg="Hi Towman, I need roadside assistance." target="_blank" rel="noopener" aria-label="Chat with Towman on WhatsApp">
+      <svg class="icon" aria-hidden="true"><use href="#i-wa" /></svg>
+      <span class="wa-fab__tip">Need a tow? Chat now</span>
+    </a>
+
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.68 8.23-8.22 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28Z"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></g></symbol>
+      <symbol id="i-truck" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M3 30V18h14l5 7h7v5"/><path d="M29 25h8l8 5v4H3v-4"/><circle cx="11" cy="35" r="4"/><circle cx="37" cy="35" r="4"/><path d="M20 18l9-8m0 0v6"/></g></symbol>
+      <symbol id="i-shield" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10l16-6Z"/><path d="M17 24l5 5 9-10"/></g></symbol>
+      <symbol id="i-bolt" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><rect x="6" y="14" width="36" height="24" rx="3"/><path d="M13 14v-4h6v4M29 14v-4h6v4M26 19l-5 8h6l-5 8"/></g></symbol>
+      <symbol id="i-tyre" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="24" cy="24" r="19"/><circle cx="24" cy="24" r="8"/><path d="M24 5v11M24 32v11M5 24h11M32 24h11" stroke-linecap="round"/></g></symbol>
+      <symbol id="i-fuel" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><path d="M8 42V8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v34M5 42h26M12 13h12v9H12z"/><path d="M28 20h4a3 3 0 0 1 3 3v11a3 3 0 0 0 6 0V16l-6-6"/></g></symbol>
+      <symbol id="i-key" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"><circle cx="15" cy="24" r="9"/><path d="M24 24h19M37 24v7M43 24v5"/></g></symbol>
+    </svg>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
